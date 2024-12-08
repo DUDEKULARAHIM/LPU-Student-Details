@@ -8,7 +8,7 @@
       "type": "image/png"
     },
     {
-      "src": "logo192.png",
+      "src": "PUBLIC_URL%/logoimg.png",
       "type": "image/png",
       "sizes": "192x192"
     },
