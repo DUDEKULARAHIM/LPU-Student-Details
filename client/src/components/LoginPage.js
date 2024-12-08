@@ -817,8 +817,8 @@ function LoginPage() {
 
          <h1>LPU Student Data</h1>
       <div className="admin-section">
-        <i className="fas fa-user fa-5x" style={{ color: "#007bff" }}></i>
-        <span>Login</span>
+        <i className="fas fa-user fa-8x" style={{ color: "#000000" }}></i>
+        
       </div>
 
         
