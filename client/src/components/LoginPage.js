@@ -802,7 +802,7 @@ function LoginPage() {
 
  const handleGuestLogin = () => {
     
-      navigate("/userdetails", { state: { user } });
+      navigate("/student-data");
     
   };
 
