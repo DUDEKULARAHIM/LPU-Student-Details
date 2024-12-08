@@ -65,8 +65,9 @@ const InstallPrompt = () => {
           borderRadius: '5px',
           cursor: 'pointer',
         }}
-      >
+      ><center>
         Install
+        </center>
       </button>
     </div>
   );
