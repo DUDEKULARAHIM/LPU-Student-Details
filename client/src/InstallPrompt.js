@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 
 const InstallPrompt = () => {
@@ -54,24 +53,31 @@ const InstallPrompt = () => {
         transform: 'translateX(-50%)',
         backgroundColor: '#333',
         color: 'white',
-        padding: '10px 20px',
-        borderRadius: '5px',
-        boxShadow: '0 4px 6px rgba(0, 0, 0, 0.1)',
+        padding: '15px 30px',
+        borderRadius: '8px',
+        boxShadow: '0 6px 10px rgba(0, 0, 0, 0.1)',
         zIndex: 1000,
+        textAlign: 'center',
       }}
     >
-      <p style={{ margin: 0 }}>Install our app for a better experience!</p>
+      <p style={{ margin: 0, fontSize: '16px' }}>
+        Install our app for a better experience!
+      </p>
       <button
         onClick={handleInstallClick}
         style={{
-          marginTop: '10px',
+          marginTop: '15px',
           backgroundColor: '#008CBA',
           color: 'white',
           border: 'none',
-          padding: '10px 20px',
+          padding: '12px 24px',
           borderRadius: '5px',
           cursor: 'pointer',
+          fontSize: '14px',
+          transition: 'background-color 0.3s',
         }}
+        onMouseEnter={(e) => (e.target.style.backgroundColor = '#007B9A')}
+        onMouseLeave={(e) => (e.target.style.backgroundColor = '#008CBA')}
       >
         Install
       </button>
