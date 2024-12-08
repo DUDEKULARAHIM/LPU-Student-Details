@@ -802,7 +802,7 @@ function LoginPage() {
  const handleGuestLogin = () => {
     const user = data.find((row) => row.Regd_No && row.Regd_No.toString() === regdNo);
     if (user) {
-      navigate("/userdetails", { state: { user } });
+      navigate("/student-data", { state: { user } });
     } else {
       setError("Invalid Registration Number. Please try again.");
     }
@@ -865,7 +865,7 @@ function LoginPage() {
 
 
         <button className="guest-login-button" onClick={handleGuestLogin}>
-  Guest Login
+  Guest Login for enter refistration number
 </button>;
 
 
