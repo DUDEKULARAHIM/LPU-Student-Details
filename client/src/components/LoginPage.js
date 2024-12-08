@@ -799,7 +799,14 @@ function LoginPage() {
     }
   };
 
-
+ const handleGuestLogin = () => {
+    const user = data.find((row) => row.Regd_No && row.Regd_No.toString() === regdNo);
+    if (user) {
+      navigate("/userdetails", { state: { user } });
+    } else {
+      setError("Invalid Registration Number. Please try again.");
+    }
+  };
 
 
       
@@ -857,9 +864,9 @@ function LoginPage() {
 
 
 
-           <Link to="/student-data" className="guest-login-button">
+        <button className="guest-login-button" onClick={handleGuestLogin}>
   Guest Login
-</Link>
+</button>;
 
 
              <div className="note-section">
