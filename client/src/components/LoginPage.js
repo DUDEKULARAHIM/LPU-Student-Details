@@ -817,7 +817,7 @@ function LoginPage() {
 
          <h1>LPU Student Data</h1>
       <div className="admin-section">
-        <img src="userlogo.png" alt="Admin Icon" width="150" height="150" />
+        <i className="fas fa-user fa-5x" style={{ color: "#007bff" }}></i>
         <span>Login</span>
       </div>
 
