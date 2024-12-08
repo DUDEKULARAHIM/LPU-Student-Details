@@ -1,0 +1,88 @@
+/* Container for the whole page */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    margin-top: 50px;
+  }
+  
+  /* Title styling */
+  .login-container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  /* Input field styling */
+  .login-container input {
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Login button styling */
+  .login-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  /* Login button hover effect */
+  .login-container button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error message styling */
+  .login-container p {
+    color: red;
+    font-size: 16px;
+  }
+  
+  /* Media Queries */
+  
+  /* Medium screens (tablets) */
+  @media (max-width: 768px) {
+    .login-container {
+      padding: 15px;
+    }
+  
+    .login-container input {
+      width: 80%; /* Adjust input width */
+    }
+  
+    .login-container button {
+      width: 80%; /* Adjust button width */
+    }
+  
+    .login-container h1 {
+      font-size: 28px; /* Adjust title size */
+    }
+  }
+  
+  /* Small screens (mobiles) */
+  @media (max-width: 480px) {
+    .login-container {
+      padding: 10px;
+    }
+  
+    /* .login-container input {
+      width: 100%;
+    } */
+  
+    /* .login-container button {
+      width: 100%; 
+    } */
+  
+    .login-container h1 {
+      font-size: 24px; /* Smaller title font */
+    }
+  }
+  

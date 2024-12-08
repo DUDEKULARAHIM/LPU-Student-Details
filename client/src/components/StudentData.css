@@ -1,0 +1,270 @@
+/* Container for the whole page */
+.student-data-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Welcome box styling */
+.welcome-box {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Search section styling */
+.search-section {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.search-section input {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-section button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-section button:hover {
+    background-color: #0056b3;
+}
+
+/* History box styling */
+.history-box {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.history-box ul {
+    list-style-type: none;
+    padding: 0;
+    display: inline-block;
+    /* border: 2px solid black; */
+}
+
+.history-box li {
+    padding: 5px 0;
+    font-size: 16px;
+    color: #333;
+    cursor: pointer;
+    border: 2px solid black;
+    padding:10px;
+    margin-bottom: 3px;
+}
+
+/* Details box styling */
+.details-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 50%;
+    height: auto; /* Automatically adjust height based on content */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.details-content p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* No record message */
+.no-record {
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+/* Logout button styling */
+.logout-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.logout-button:hover {
+    background-color: #cc0000;
+}
+
+/* Footer styling */
+.footer {
+    margin-top: 30px;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-icons {
+    margin-top: 10px;
+}
+
+.contact-icons a {
+    margin: 0 15px;
+    font-size: 30px;
+    color: #333;  /* Default color */
+    text-decoration: none;
+}
+
+/* Icon colors */
+.contact-icons a:hover {
+    color: #007bff; /* Hover color */
+}
+
+/* Specific icon colors */
+.contact-icons a:nth-child(1) {
+    color: #0077b5; /* LinkedIn color */
+}
+
+.contact-icons a:nth-child(2) {
+    color: #333; /* GitHub color */
+}
+
+.contact-icons a:nth-child(3) {
+    color: #1877f2; /* Facebook color */
+}
+
+.contact-icons a:nth-child(4) {
+    color: #db4437; /* Google color */
+}
+
+.contact-icons a:nth-child(5) {
+    color: #e1306c; /* Instagram color */
+}
+
+.contact-icons a:hover {
+    color: #ff5722; /* Hover color for all icons */
+}
+
+/* Icon classes */
+.fa {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.fa-linkedin::before {
+    content: "\f0e1";
+}
+
+.fa-github::before {
+    content: "\f09b";
+}
+
+.fa-facebook::before {
+    content: "\f09a";
+}
+
+.fa-google::before {
+    content: "\f1a0";
+}
+
+.fa-instagram::before {
+    content: "\f16d";
+}
+
+/* Media Queries */
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  .student-data-container {
+    padding: 15px; /* Adjust padding for smaller screens */
+  }
+
+  .welcome-box, .history-box, .details-box {
+    width: 80%; /* Reduce width for tablets */
+    margin-bottom: 20px;
+  }
+
+  .search-section input {
+    width: 80%; /* Adjust input width */
+  }
+
+  .search-section button {
+    width: 80%; /* Adjust button width */
+  }
+
+  .footer {
+    padding: 10px;
+  }
+
+  .contact-icons a {
+    font-size: 28px; /* Slightly larger icons for tablets */
+    margin: 0 12px; /* Increase space between icons */
+  }
+}
+
+/* Small screens (mobiles) */
+@media (max-width: 480px) {
+  .student-data-container {
+    padding: 10px; /* Adjust padding for mobile screens */
+  }
+
+  .welcome-box, .history-box, .details-box {
+    width: 90%; 
+    margin-bottom: 15px; /* Add space between sections */
+  }
+
+  .search-section input,
+  .search-section button {
+    /* width: 100%; Full width for input and button */
+    margin-bottom: 10px;
+  }
+
+  .logout-button {
+    width: 100%; /* Full width logout button */
+  }
+
+  .footer {
+    padding: 10px;
+  }
+
+  .contact-icons a {
+    font-size: 20px; /* Smaller icons on mobile */
+    margin: 0 8px; /* Adjust margin */
+  }
+
+  .footer p {
+    font-size: 14px; /* Smaller font size for footer */
+  }
+}
