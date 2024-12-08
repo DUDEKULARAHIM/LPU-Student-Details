@@ -840,6 +840,18 @@ function LoginPage() {
 
       {/* Display error messages */}
       {error && <p className="error">{error}</p>}
+
+
+             <div className="note-section">
+        <div className="note-box">
+          <h3>NOTE</h3>
+          <p><strong>Username:</strong> Enter your university registration number</p>
+          <p><strong>Email:</strong> Enter your email for verification purposes. We do not collect any of your data; it is safe.</p>
+          <p><strong>OTHER NOTE:</strong> Click on Guest Login to see the user details of the entered user only.</p>
+        </div>
+      </div>
+
+            
     </div>
   );
 }
