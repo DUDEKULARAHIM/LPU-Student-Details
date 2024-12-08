@@ -84,5 +84,45 @@
     .login-container h1 {
       font-size: 24px; /* Smaller title font */
     }
+
+
+      
+    .note-section {
+        width: 100%;
+    }
+
+      
   }
-  
+
+
+
+
+/* Note section styling */
+.note-section {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 600px;
+}
+
+.note-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+    background-color: #f9f9f9;
+}
+
+.note-box h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.note-box p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.note-box p strong {
+    color: #000;
+}
