@@ -723,7 +723,7 @@
 
 import React, { useEffect, useState } from "react";
 import * as XLSX from "xlsx";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import './LoginPage.css';
 import axios from "axios";
 
@@ -810,7 +810,7 @@ function LoginPage() {
 
          <h1>LPU Student Data</h1>
       <div className="admin-section">
-        <img src="/admin-icon.png" alt="Admin Icon" className="admin-icon" />
+        <img src="userlogo.png" alt="Admin Icon" width="150" height="150" />
         <span>Login</span>
       </div>
 
