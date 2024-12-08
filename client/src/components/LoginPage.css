@@ -126,3 +126,20 @@
 .note-box p strong {
     color: #000;
 }
+
+
+/* Guest login button styled as a link */
+.guest-login-button {
+    background: none;
+    border: none;
+    color: #007bff;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.guest-login-button:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
