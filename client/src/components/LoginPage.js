@@ -800,11 +800,7 @@ function LoginPage() {
   };
 
 
- const handleGuestLogin = () => {
-    
-      navigate("/student-data");
-    
-  };
+
 
       
 
@@ -861,7 +857,9 @@ function LoginPage() {
 
 
 
-             <button className="guest-login-button" onClick={handleGuestLogin}>Guest Login</button>
+           <Link to="/student-data" className="guest-login-button">
+  Guest Login
+</Link>
 
 
              <div className="note-section">
