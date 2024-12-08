@@ -799,8 +799,26 @@ function LoginPage() {
     }
   };
 
+
+ const handleGuestLogin = () => {
+    
+      navigate("/userdetails", { state: { user } });
+    
+  };
+
+      
+
   return (
     <div className="login-container">
+
+
+         <h1>LPU Student Data</h1>
+      <div className="admin-section">
+        <img src="/admin-icon.png" alt="Admin Icon" className="admin-icon" />
+        <span>Login</span>
+      </div>
+
+        
       <h1>Login Page</h1>
       
       {/* Step 1: Registration and Email */}
@@ -840,6 +858,10 @@ function LoginPage() {
 
       {/* Display error messages */}
       {error && <p className="error">{error}</p>}
+
+
+
+             <button className="guest-login-button" onClick={handleGuestLogin}>Guest Login</button>
 
 
              <div className="note-section">
