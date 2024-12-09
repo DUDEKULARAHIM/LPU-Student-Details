@@ -8,7 +8,7 @@
       "type": "image/png"
     },
     {
-      "src": "PUBLIC_URL%/logoimg.png",
+      "src": "PUBLIC_URL%/applogo.png",
       "type": "image/png",
       "sizes": "192x192"
     },
