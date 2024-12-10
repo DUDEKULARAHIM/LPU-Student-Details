@@ -839,7 +839,7 @@ function LoginPage() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-                  <p> Wait for 3 sec for enter Authentication code</p>
+      
           <button onClick={handleSendCode}>Send Authentication Code</button>
         </>
       )}
