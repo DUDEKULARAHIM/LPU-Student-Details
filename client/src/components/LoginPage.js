@@ -802,7 +802,7 @@ function LoginPage() {
  const handleGuestLogin = () => {
     const user = data.find((row) => row.Regd_No && row.Regd_No.toString() === regdNo);
     if (user) {
-      navigate("/student-data", { state: { user } });
+      navigate("/guest-login", { state: { user } });
     } else {
       setError("Invalid Registration Number. Please try again.");
     }
