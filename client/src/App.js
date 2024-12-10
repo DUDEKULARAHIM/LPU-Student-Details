@@ -31,6 +31,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoginPage from "./components/LoginPage";
 import StudentData from "./components/StudentData";
+import GuestLogin from "./components/GuestLogin";
 import InstallPrompt from "./InstallPrompt";  // Import the InstallPrompt component
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
@@ -43,6 +44,8 @@ function App() {
       <Routes>
         <Route path="/" element={<LoginPage />} />
         <Route path="/student-data" element={<StudentData />} />
+        <Route path="/guest-login" element={<GuestLogin />} />
+
       </Routes>
     </Router>
   );
