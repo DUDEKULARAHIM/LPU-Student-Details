@@ -238,8 +238,8 @@ app.post("/api/send-auth-code", (req, res) => {
     html: `
       <html>
         <body style="background-color: black; color: white; font-family: Arial, sans-serif; text-align: center; padding: 50px;">
-          <h1>Authentication Code</h1>
-          <p>Your authentication code is:</p>
+          <h1 style="color: white;">Authentication Code</h1>
+          <p style="font-size: 24px; color: white;">Your authentication code is:</p>
           <div style="font-size: 36px; font-weight: bold; background-color: #333; padding: 20px; border-radius: 10px;">
             ${authCode}
           </div>
